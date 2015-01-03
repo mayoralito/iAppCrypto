@@ -201,7 +201,7 @@ exit(-1);                       \
         thisEncipher = NULL;
     }
     
-    //LOGGING_FACILITY1( ccStatus == kCCSuccess, @"Problem with encipherment ccStatus == %d", ccStatus );
+//    NSLog(@"Problem with encipherment ccStatus == %d", ccStatus );
     
     if (ccStatus == kCCSuccess)
         cipherOrPlainText = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)totalBytesWritten];

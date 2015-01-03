@@ -14,7 +14,7 @@
 +(instancetype)sharedInstance;
 
 /** */
-- (NSData*)encryptString:(NSString*)string withIV:(void *)theIV;
+- (NSData*)encryptStringToNSData:(NSString*)string withIV:(void *)theIV;
 
 /** */
 - (NSString*)decryptNSData:(NSData*)dataToDencrypt

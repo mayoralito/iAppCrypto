@@ -17,7 +17,7 @@
     CryptoHandler       *__crypto;
 }
 
-// Llave en la primer version
+// This key should be the same on your app and int the end-point.
 const unsigned char keyBytes[] = {7, 5, 3, -14, -11, -13, 17, -20, 16, -101, 33, 65, 7, 26, 40, 12};
 
 NSData          *_key = nil;
@@ -42,7 +42,7 @@ static id shared = NULL;
 }
 
 #pragma mark - Crypto / Decript
-- (NSData*)encryptString:(NSString*)string
+- (NSData*)encryptStringToNSData:(NSString*)string
                   withIV:(void *)theIV
 {
     // Set padding to text encryption

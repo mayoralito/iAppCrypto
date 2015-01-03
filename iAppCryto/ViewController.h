@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextViewDelegate>
 
+@property (nonatomic, strong) IBOutlet UITextView  *txtViewPlainText;
+@property (nonatomic, strong) IBOutlet UITextView  *txtViewEncrypted;
+@property (nonatomic, strong) IBOutlet UITextView  *txtViewDecrypted;
 
 @end
 
